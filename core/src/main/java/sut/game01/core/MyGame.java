@@ -20,7 +20,7 @@ public class MyGame extends Game.Default {
 
   @Override
   public void init() {
-    ss.push(new HomeScreen(ss));
+    ss.push(new StartScreen(ss));
   }
 
   @Override
