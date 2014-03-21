@@ -13,6 +13,8 @@ public class MyGame extends Game.Default {
     public static final int UPDATE_RATE = 33;
     private ScreenStack ss = new ScreenStack();
     protected final Clock.Source clock = new Clock.Source(UPDATE_RATE);
+    public static final int money = 0;
+    public static int ppp=0;
 
   public MyGame() {
     super(UPDATE_RATE); // call update every 33ms (30 times per second)

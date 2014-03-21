@@ -52,7 +52,7 @@ public class StartScreen extends Screen {
         bbLayer.addListener(new Pointer.Adapter(){
             @Override
             public void onPointerEnd(Pointer.Event event) {
-                ss.push(new TestScreen(ss));
+                ss.push(new ShopScreen(ss));
             }
         });
 

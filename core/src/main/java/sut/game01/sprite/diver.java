@@ -14,7 +14,8 @@ import sut.game01.core.GameScreen;
 /**
  * Created by rst706 on 3/5/14.
  */
-public class diver {public Sprite sprite;
+public class diver {
+    public Sprite sprite;
     public int spriteIndex = 0;
     public boolean hasLoaded = false;
     public boolean contacted;
