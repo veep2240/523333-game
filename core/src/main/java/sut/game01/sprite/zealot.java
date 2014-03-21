@@ -75,7 +75,7 @@ public class zealot {
         if(e > 150){
             switch (state){
                 case IDLE: offset =0;
-                    if (hp==50){
+                        if (hp==50){
                         state=State.RUN;
                     }
                     spriteIndex = offset + ((spriteIndex + 1) % 9);
@@ -127,7 +127,6 @@ private Body initPhysicsBody(World world, float x, float y){
     fixtureDef.friction = 0.1f;
     fixtureDef.restitution = 0f;
     body.createFixture(fixtureDef);
-
     body.setLinearDamping(0.2f);
     body.setTransform(new Vec2(x,y),0f);
 
@@ -174,7 +173,7 @@ private Body initPhysicsBody(World world, float x, float y){
 
         sprite.layer().setTranslation((body.getPosition().x/GameScreen.M_PER_PIXEL),
                 (body.getPosition().y/GameScreen.M_PER_PIXEL));
-        body.applyForce(new Vec2(0f,30f),body.getPosition());
+        body.applyTorque(200);
     }
     public Body getbody(){
         return this.body;

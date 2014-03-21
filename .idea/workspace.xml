@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5cf288ac-51ae-48af-b00e-c2c7c57197af" name="Default" comment="" />
+    <list default="true" id="11f8c8e2-08ea-4934-a56d-983231fbb6d6" name="Default" comment="" />
     <ignored path="game01.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -11,6 +11,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="Commander">
+    <leftPanel />
+    <rightPanel />
+    <splitter proportion="0.5" />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -64,28 +69,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="HomeScreen.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/core/HomeScreen.java">
+      <file leaf-file-name="GameScreen.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/core/GameScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="50" selection-start="697" selection-end="788" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="748">
+            <state line="197" column="25" selection-start="6139" selection-end="6144" vertical-scroll-proportion="0.0" vertical-offset="3349" max-vertical-offset="7854">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StartScreen.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/core/StartScreen.java">
+      <file leaf-file-name="car.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/sprite/car.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="33" selection-start="943" selection-end="943" vertical-scroll-proportion="0.5584416" vertical-offset="482" max-vertical-offset="1598">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1273#1446#0" expanded="true" />
-                <element signature="e#1435#1436#0" expanded="true" />
-                <element signature="e#1759#1932#0" expanded="true" />
-                <element signature="e#1921#1922#0" expanded="true" />
-                <element signature="e#2243#2416#0" expanded="true" />
-                <element signature="e#2405#2406#0" expanded="true" />
-              </folding>
+            <state line="117" column="0" selection-start="2961" selection-end="2961" vertical-scroll-proportion="0.0" vertical-offset="1989" max-vertical-offset="2618">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -93,19 +90,17 @@
       <file leaf-file-name="MyGame.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/core/MyGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="29" selection-start="579" selection-end="579" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameScreen.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/core/GameScreen.java">
+      <file leaf-file-name="fire.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/sprite/fire.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="4" selection-start="1491" selection-end="1491" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="3655">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="39" column="4" selection-start="987" selection-end="1005" vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="3162">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -113,24 +108,37 @@
       <file leaf-file-name="zealot.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/sprite/zealot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="170" column="36" selection-start="4494" selection-end="4494" vertical-scroll-proportion="0.0" vertical-offset="2397" max-vertical-offset="3009">
+            <state line="163" column="0" selection-start="4356" selection-end="4356" vertical-scroll-proportion="0.0" vertical-offset="2771" max-vertical-offset="3179">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test1-1.png" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/src/main/resources/assets/images/test1-1.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="diver.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/src/main/resources/assets/images/diver.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="0" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="272">
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="go.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/sprite/go.java">
+      <file leaf-file-name="StartScreen.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/core/StartScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="2567">
+            <state line="41" column="33" selection-start="943" selection-end="943" vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="1598">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShopScreen.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/core/ShopScreen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="49" selection-start="688" selection-end="688" vertical-scroll-proportion="0.6017699" vertical-offset="187" max-vertical-offset="799">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -142,25 +150,21 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/core/src/main/java/sut/game01/core/Screen.java" />
-        <option value="G:/core/src/main/java/sut/game01/core/TestScreen.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/sut/game01/sprite/HP.java" />
-        <option value="$PROJECT_DIR$/assets/src/main/resources/assets/images/hp.json" />
-        <option value="$PROJECT_DIR$/assets/src/main/resources/assets/images/zealot.json" />
-        <option value="$PROJECT_DIR$/assets/src/main/resources/assets/images/monter.json" />
-        <option value="$PROJECT_DIR$/core/pom.xml" />
-        <option value="$PROJECT_DIR$/core/src/main/java/sut/game01/core/DebugDrawBox2D.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/sut/game01/core/HomeScreen.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/sut/game01/sprite/go.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/sut/game01/core/TestScreen.java" />
+        <option value="$PROJECT_DIR$/assets/src/main/resources/assets/images/diver.json" />
+        <option value="$PROJECT_DIR$/core/src/main/java/sut/game01/sprite/car.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/sut/game01/sprite/diver.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/sut/game01/core/fire.java" />
+        <option value="$PROJECT_DIR$/assets/src/main/resources/assets/images/fire.json" />
+        <option value="$PROJECT_DIR$/core/src/main/java/sut/game01/sprite/fire.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/sut/game01/core/GameScreen.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/sut/game01/sprite/zealot.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/sut/game01/core/MyGame.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/sut/game01/core/StartScreen.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/sut/game01/core/ShopScreen.java" />
       </list>
     </option>
   </component>
@@ -293,6 +297,10 @@
               <option name="myItemId" value="game01" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sprite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -400,8 +408,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -411,14 +419,16 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="recentsLimit" value="5" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../game04" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="options.lastSelected" value="vcs.Git" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="FullScreen" value="false" />
   </component>
-  <component name="RunManager" selected="Android Application.game01-android">
+  <component name="RunManager">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -475,6 +485,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -500,19 +523,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -568,109 +578,47 @@
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
-    <configuration default="false" name="game01-android" type="AndroidRunConfigurationType" factoryName="Android Application">
-      <module name="game01-android" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="DEPLOY" value="true" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <RunnerSettings RunnerId="AndroidDebugRunner" />
-      <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
-      <method />
-    </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Android Application.game01-android" />
-    </list>
+    <list size="0" />
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
-    <option name="USER" value="" />
-    <option name="PASSWORD" value="" />
-    <option name="mySSHConnectionTimeout" value="30000" />
-    <option name="mySSHReadTimeout" value="30000" />
-    <option name="LAST_MERGED_REVISION" />
-    <option name="MERGE_DRY_RUN" value="false" />
-    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
-    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
-    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
-    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
-    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
-    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
-    <option name="FORCE_UPDATE" value="false" />
-    <option name="IGNORE_EXTERNALS" value="false" />
-    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5cf288ac-51ae-48af-b00e-c2c7c57197af" name="Default" comment="" />
-      <created>1388643326921</created>
-      <updated>1388643326921</updated>
+      <changelist id="11f8c8e2-08ea-4934-a56d-983231fbb6d6" name="Default" comment="" />
+      <created>1394527875765</created>
+      <updated>1394527875765</updated>
     </task>
     <servers />
   </component>
-  <component name="TodoView" selected-index="0">
-    <todo-panel id="selected-file">
-      <are-packages-shown value="false" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="default-changelist">
-      <are-packages-shown value="false" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="false" />
-    </todo-panel>
-  </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24969475" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32870865" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22276422" sideWeight="0.10866911" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.037398376" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15634441" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13217522" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1397281" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33170733" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16087614" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22257054" sideWeight="0.89072037" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -689,409 +637,328 @@
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
-  <component name="antWorkspaceConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/pom.xml">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/sprite/diver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="672" selection-end="672" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="918" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/core/HomeScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="5" selection-start="605" selection-end="605" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="935">
+        <state line="161" column="23" selection-start="3866" selection-end="3866" vertical-scroll-proportion="0.0" vertical-offset="2737" max-vertical-offset="2975">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/core/TestScreen.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/sprite/car.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="23" selection-start="380" selection-end="380" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="1428" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/sprite/Sprite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="5" selection-start="1956" selection-end="1956" vertical-scroll-proportion="0.0" vertical-offset="952" max-vertical-offset="3553" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/sprite/zealot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="0" selection-start="1943" selection-end="1943" vertical-scroll-proportion="0.0" vertical-offset="1326" max-vertical-offset="1717">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/sprite/HP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="52" selection-start="803" selection-end="803" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="1326" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/src/main/resources/assets/images/hp.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="36" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="221" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/core/MyGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="18" selection-start="652" selection-end="652" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="731">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="672" selection-end="672" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="918" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/core/HomeScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="5" selection-start="605" selection-end="605" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="935">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/core/TestScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="23" selection-start="380" selection-end="380" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="1479" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/sprite/Sprite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="5" selection-start="1956" selection-end="1956" vertical-scroll-proportion="0.0" vertical-offset="952" max-vertical-offset="3553" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/sprite/zealot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="33" selection-start="1563" selection-end="1563" vertical-scroll-proportion="0.0" vertical-offset="1037" max-vertical-offset="1717">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/sprite/HP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="0" selection-start="1599" selection-end="1599" vertical-scroll-proportion="0.0" vertical-offset="482" max-vertical-offset="1326" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/src/main/resources/assets/images/hp.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="36" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="221" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/core/MyGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="3" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="691" selection-end="691" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="935" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/core/HomeScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="16" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="935">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/core/TestScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="38" selection-start="335" selection-end="335" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="935" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/core/MyGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="448" selection-end="448" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="691" selection-end="691" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="935" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/core/HomeScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="32" selection-start="371" selection-end="375" vertical-scroll-proportion="0.0" vertical-offset="1" max-vertical-offset="935">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/core/TestScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="935" selection-end="935" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="697" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/core/MyGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="3" selection-start="653" selection-end="653" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="765">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="691" selection-end="691" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="935" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/core/HomeScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="12" selection-start="671" selection-end="1199" vertical-scroll-proportion="0.0" vertical-offset="304" max-vertical-offset="935">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/core/TestScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="10" selection-start="698" selection-end="698" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="697" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="49" selection-start="1048" selection-end="1048" vertical-scroll-proportion="0.25044093" vertical-offset="402" max-vertical-offset="969" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/src/main/resources/assets/images/hp.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="36" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="221" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/sprite/HP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="52" selection-start="803" selection-end="803" vertical-scroll-proportion="0.0" vertical-offset="292" max-vertical-offset="1241" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/src/main/resources/assets/images/01.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/src/main/resources/assets/images/zealot.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="5" selection-start="0" selection-end="2397" vertical-scroll-proportion="0.0" vertical-offset="222" max-vertical-offset="833" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="911" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/threerings/tripleplay/1.8/tripleplay-1.8.jar!/tripleplay/game/ScreenStack.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="129" column="0" selection-start="5407" selection-end="5407" vertical-scroll-proportion="0.8107607" vertical-offset="1739" max-vertical-offset="2278" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/threerings/react/1.4.1/react-1.4.1.jar!/react/UnitSlot.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="25" selection-start="401" selection-end="401" vertical-scroll-proportion="0.307971" vertical-offset="0" max-vertical-offset="552" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/main/java/sut/game01/java/MyGameJava.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="341" selection-end="341" vertical-scroll-proportion="0.29462737" vertical-offset="0" max-vertical-offset="577" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/playn/playn-core/1.8/playn-core-1.8-sources.jar!/playn/core/Image.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="17" selection-start="800" selection-end="825" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2771" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="25" selection-start="976" selection-end="1013" vertical-scroll-proportion="0.17558528" vertical-offset="422" max-vertical-offset="1020" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/src/main/resources/assets/images/monter.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="5" selection-start="666" selection-end="666" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="391" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/playn/playn-core/1.8/playn-core-1.8-sources.jar!/playn/core/PlayN.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="29" selection-start="3805" selection-end="3845" vertical-scroll-proportion="0.0" vertical-offset="1326" max-vertical-offset="3502">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/sprite/go.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2567">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/sprite/SpriteLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="0" selection-start="4445" selection-end="4445" vertical-scroll-proportion="0.33241758" vertical-offset="1613" max-vertical-offset="3077" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/sprite/Sprite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="159" column="0" selection-start="4566" selection-end="4566" vertical-scroll-proportion="0.33246753" vertical-offset="2201" max-vertical-offset="3179" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/core/TestScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="26" selection-start="1970" selection-end="1970" vertical-scroll-proportion="1.3974026" vertical-offset="754" max-vertical-offset="1445" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/src/main/resources/assets/images/test1-1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/sprite/zealot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="170" column="36" selection-start="4494" selection-end="4494" vertical-scroll-proportion="0.0" vertical-offset="2397" max-vertical-offset="3009">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/core/DebugDrawBox2D.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="149" column="41" selection-start="4447" selection-end="4447" vertical-scroll-proportion="0.6181818" vertical-offset="2125" max-vertical-offset="4862">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/core/HomeScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="50" selection-start="697" selection-end="788" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="748">
+        <state line="99" column="57" selection-start="2527" selection-end="2529" vertical-scroll-proportion="0.0" vertical-offset="1683" max-vertical-offset="2618">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/core/GameScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="4" selection-start="1491" selection-end="1491" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="3655">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="231" column="64" selection-start="6950" selection-end="6998" vertical-scroll-proportion="0.0" vertical-offset="3927" max-vertical-offset="4845">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/sprite/zealot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="166" column="52" selection-start="4429" selection-end="4447" vertical-scroll-proportion="0.0" vertical-offset="2822" max-vertical-offset="3196">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/sprite/diver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="140" selection-start="2257" selection-end="2257" vertical-scroll-proportion="0.0" vertical-offset="1428" max-vertical-offset="2805">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/sprite/car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="99" column="99" selection-start="2573" selection-end="2573" vertical-scroll-proportion="0.0" vertical-offset="1683" max-vertical-offset="2346">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/core/GameScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="231" column="64" selection-start="6950" selection-end="6998" vertical-scroll-proportion="0.0" vertical-offset="3927" max-vertical-offset="4845">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/sprite/zealot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="166" column="52" selection-start="4429" selection-end="4447" vertical-scroll-proportion="0.0" vertical-offset="2822" max-vertical-offset="3196">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/src/main/resources/assets/images/diver.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/sprite/diver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="153" column="61" selection-start="3739" selection-end="3739" vertical-scroll-proportion="0.0" vertical-offset="2584" max-vertical-offset="2584">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/src/main/resources/assets/images/diver.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="34" selection-start="76" selection-end="76" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="272" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/sprite/car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="10" selection-start="2076" selection-end="2076" vertical-scroll-proportion="0.0" vertical-offset="1394" max-vertical-offset="2618">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/core/GameScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="237" column="12" selection-start="7081" selection-end="7475" vertical-scroll-proportion="0.0" vertical-offset="3779" max-vertical-offset="4845">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/sprite/zealot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="78" selection-start="1142" selection-end="1179" vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="3196">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/src/main/resources/assets/images/diver.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/sprite/diver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="140" column="0" selection-start="3244" selection-end="3244" vertical-scroll-proportion="0.0" vertical-offset="2380" max-vertical-offset="2380">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/src/main/resources/assets/images/diver.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="34" selection-start="76" selection-end="76" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="272" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/sprite/car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="434" selection-end="540" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="2618">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/core/GameScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="24" selection-start="1391" selection-end="1391" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4522">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/sprite/car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="92" column="30" selection-start="2218" selection-end="2218" vertical-scroll-proportion="0.0" vertical-offset="1564" max-vertical-offset="2363">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/sprite/Sprite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="13" selection-start="1264" selection-end="1264" vertical-scroll-proportion="0.33286318" vertical-offset="36" max-vertical-offset="3179">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jbox2d/jbox2d-library/2.1.2.3/jbox2d-library-2.1.2.3.jar!/org/jbox2d/common/Transform.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="40" selection-start="297" selection-end="297" vertical-scroll-proportion="0.29166666" vertical-offset="0" max-vertical-offset="663" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/src/main/resources/assets/images/diver.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jbox2d/jbox2d-library/2.1.2.3/jbox2d-library-2.1.2.3.jar!/org/jbox2d/dynamics/joints/RevoluteJoint.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="169" selection-end="169" vertical-scroll-proportion="0.20731707" vertical-offset="0" max-vertical-offset="1122" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/playn/playn-core/1.8/playn-core-1.8-sources.jar!/playn/core/Layer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="247" column="8" selection-start="9339" selection-end="9339" vertical-scroll-proportion="0.33259425" vertical-offset="3743" max-vertical-offset="9707" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jbox2d/jbox2d-library/2.1.2.3/jbox2d-library-2.1.2.3.jar!/org/jbox2d/dynamics/joints/RevoluteJointDef.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="11" selection-start="557" selection-end="557" vertical-scroll-proportion="0.6585956" vertical-offset="0" max-vertical-offset="425" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jbox2d/jbox2d-library/2.1.2.3/jbox2d-library-2.1.2.3.jar!/org/jbox2d/dynamics/joints/LineJointDef.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="40" selection-start="322" selection-end="322" vertical-scroll-proportion="0.2881356" vertical-offset="0" max-vertical-offset="425" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jbox2d/jbox2d-library/2.1.2.3/jbox2d-library-2.1.2.3.jar!/org/jbox2d/common/Vec2.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="40" selection-start="746" selection-end="746" vertical-scroll-proportion="0.3535109" vertical-offset="228" max-vertical-offset="1547" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/core/TestScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="25" selection-start="860" selection-end="860" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="1156">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/core/HomeScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="32" selection-start="708" selection-end="708" vertical-scroll-proportion="0.7759336" vertical-offset="0" max-vertical-offset="748">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jbox2d/jbox2d-library/2.1.2.3/jbox2d-library-2.1.2.3.jar!/org/jbox2d/dynamics/World.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="140" column="0" selection-start="6423" selection-end="6423" vertical-scroll-proportion="0.8265766" vertical-offset="1996" max-vertical-offset="2465" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/sprite/diver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="20" selection-start="448" selection-end="469" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="2771">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_25/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="723" column="0" selection-start="26932" selection-end="26932" vertical-scroll-proportion="0.33195022" vertical-offset="11502" max-vertical-offset="33898" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/BattleNoFeel/core/src/main/java/Shop/Shop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="5" selection-start="1063" selection-end="1069" vertical-scroll-proportion="0.46077034" vertical-offset="0" max-vertical-offset="5202" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/BattleNoFeel/core/src/main/java/Event/BattleNoFeel/core/DebugDrawBox2D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4947" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/BattleNoFeel/core/src/main/java/Event/BattleNoFeel/core/HomeScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="27" selection-start="719" selection-end="719" vertical-scroll-proportion="0.53352356" vertical-offset="0" max-vertical-offset="935" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/BattleNoFeel/core/src/main/java/SpriteAll/Bullet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="114" column="19" selection-start="3133" selection-end="3133" vertical-scroll-proportion="0.0" vertical-offset="1441" max-vertical-offset="2346" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/BattleNoFeel/core/src/main/java/State/State01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="247" column="27" selection-start="8949" selection-end="8949" vertical-scroll-proportion="0.0" vertical-offset="761" max-vertical-offset="8194" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/src/main/resources/assets/images/fire.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/core/DebugDrawBox2D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="369" selection-end="369" vertical-scroll-proportion="-4.738938" vertical-offset="2193" max-vertical-offset="4862">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="29" selection-start="739" selection-end="739" vertical-scroll-proportion="0.5265487" vertical-offset="153" max-vertical-offset="1020">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_25/src.zip!/java/lang/Override.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="18" selection-start="971" selection-end="971" vertical-scroll-proportion="0.69911504" vertical-offset="143" max-vertical-offset="595" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/src/main/resources/assets/images/fire.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="60" selection-start="101" selection-end="101" vertical-scroll-proportion="0.11943794" vertical-offset="0" max-vertical-offset="427" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/sprite/fire.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="4" selection-start="987" selection-end="1005" vertical-scroll-proportion="0.0" vertical-offset="1275" max-vertical-offset="2890">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/src/main/resources/assets/images/diver.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="272">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/core/MyGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="29" selection-start="579" selection-end="579" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/sprite/zealot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="163" column="0" selection-start="4356" selection-end="4356" vertical-scroll-proportion="0.0" vertical-offset="2431" max-vertical-offset="3043">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/sprite/car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="117" column="0" selection-start="2961" selection-end="2961" vertical-scroll-proportion="0.0" vertical-offset="850" max-vertical-offset="2346">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/core/GameScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="197" column="25" selection-start="6139" selection-end="6144" vertical-scroll-proportion="0.0" vertical-offset="3147" max-vertical-offset="7701">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/core/StartScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="33" selection-start="943" selection-end="943" vertical-scroll-proportion="0.5584416" vertical-offset="482" max-vertical-offset="1598">
+        <state line="41" column="33" selection-start="943" selection-end="943" vertical-scroll-proportion="0.0" vertical-offset="466" max-vertical-offset="1428">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/sut/game01/core/ShopScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="49" selection-start="688" selection-end="688" vertical-scroll-proportion="0.6017699" vertical-offset="187" max-vertical-offset="799">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1273#1446#0" expanded="true" />
-            <element signature="e#1435#1436#0" expanded="true" />
-            <element signature="e#1759#1932#0" expanded="true" />
-            <element signature="e#1921#1922#0" expanded="true" />
-            <element signature="e#2243#2416#0" expanded="true" />
-            <element signature="e#2405#2406#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
   </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>Android</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>Android API 11 Platform</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>game01</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>jdk1.7.0_40</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: com.allen-sauer.gwt.voices:gwt-voices:3.2.0</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
-  </component>
   <component name="mavenExecuteGoalHistory">
     <option value="$PROJECT_DIR$" />
     <option value="test -Pjava" />
-    <option value="package -Pandroid" />
-    <option value="package -Pjava" />
-    <option value="integration-test -Phtml" />
   </component>
 </project>
 

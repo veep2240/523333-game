@@ -25,12 +25,13 @@
     </profile>
     <profile>
       <id>android</id>
-      <properties>
+      <modules><module>android</module></modules>
+        <properties>
           <android.sdk.path>
-              c:\dev\android\sdk
+              E:\SDK
           </android.sdk.path>
       </properties>
-      <modules><module>android</module></modules>
+
     </profile>
     <profile>
       <id>ios</id>
