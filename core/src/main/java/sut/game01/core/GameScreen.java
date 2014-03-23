@@ -11,22 +11,17 @@ import org.jbox2d.dynamics.contacts.Contact;
 import org.jbox2d.dynamics.joints.*;
 import playn.core.*;
 import playn.core.util.Clock;
-import sut.game01.sprite.go;
+import sut.game01.sprite.*;
 import tripleplay.game.ScreenStack;
 import tripleplay.game.Screen;
 import org.jbox2d.common.Vec2;
-import sut.game01.sprite.zealot;
-import sut.game01.sprite.car;
 import sut.game01.sprite.go;
-import sut.game01.sprite.diver;
-import sut.game01.sprite.fire;
 import sut.game01.core.DebugDrawBox2D;
 
 
 import playn.core.util.Callback;
 import react.UnitSlot;
 import sut.game01.sprite.zealot;
-import sut.game01.sprite.HP;
 import tripleplay.game.ScreenStack;
 import tripleplay.game.Screen;
 import tripleplay.game.UIScreen;
@@ -36,6 +31,9 @@ import playn.core.Pointer;
 import org.jbox2d.collision.*;
 import org.jbox2d.collision.shapes.*;
 import org.jbox2d.common.MathUtils.*;
+import sut.game01.sprite.dragon1;
+
+import java.util.ArrayList;
 
 import static playn.core.PlayN.*;
 
@@ -60,8 +58,10 @@ public class GameScreen extends Screen {
     private zealot z ;
     private car c;
     private diver d;
+    public dragon1 dra1;
     private fire f;
-    private int a=0;
+    private int a=0,time=0;
+    public float xm,ym;
     private RevoluteJoint joint3;
     private LineJoint joint;
     private RevoluteJointDef jd3 = new RevoluteJointDef();
@@ -72,6 +72,8 @@ public class GameScreen extends Screen {
     public static boolean firebox = true;
     public static boolean firexy = true;
     public static float fireX,fireY,angle;
+
+    ArrayList<fire> fireArrayList = new ArrayList<fire>();
 
     public GameScreen(ScreenStack ss) {
         this.ss = ss;
@@ -91,10 +93,25 @@ public class GameScreen extends Screen {
         world.setContactListener(new ContactListener() {
             @Override
             public void beginContact(Contact contact) {
+                for (fire f : fireArrayList){
+
+                    if (contact.getFixtureB().getBody()==f.getbody()&&contact.getFixtureA().getBody()==dra1.getbody()){
+                        dra1.contact(contact);
+                        dra1.HP = dra1.HP -50;
+                        f.closebody();
+
+
+                    }
+                }
+                if(contact.getFixtureB().getBody()==dra1.getbody()&&contact.getFixtureA().getBody()==ground){
+                    dra1.closebody();
+
+                }
                 if (contact.getFixtureA().getBody()==body&&contact.getFixtureB().getBody()==d.getbody()){
                 if (firebox==false){
                     if (firexy==true){
                     f = new fire(world,90f,310f);
+                    fireArrayList.add(f);
                     layer.add(f.layer());
                     firexy=false;
                     }
@@ -125,10 +142,13 @@ public class GameScreen extends Screen {
 
             @Override
             public void endContact(Contact contact) {
+                for (fire f : fireArrayList){
+
 
                 if (contact.getFixtureA().getBody()==f.getbody()||contact.getFixtureB().getBody()==f.getbody()){
 //                    f.closebody();
 
+                }
                 }
 //                System.out.println(contact.getFixtureA().getBody());
 //                System.out.println(contact.getFixtureB().getBody());
@@ -194,9 +214,10 @@ public class GameScreen extends Screen {
 //        z = new zealot(world,100f,100f);
         c = new car(world,80f,400f);
         d = new diver(world,80f,355f);
-        f = new fire(world,90f,330f);
+        dra1 = new dragon1(world,750,200);
         layer.add(c.layer());
         layer.add(d.layer());
+        layer.add(dra1.layer());
 
 //        layer.add(z.layer());
 
@@ -424,10 +445,25 @@ public class GameScreen extends Screen {
 //        z.update(delta);
         c.update(delta);
         d.update(delta);
-        f.update(delta);
+            dra1.update(delta);
+        for (fire f : fireArrayList){
+                f.update(delta);
+            }
 
 
         }
+//        time+=delta;
+//        if (time>=1000){
+//            xm = dra1.getbody().getPosition().x;
+//            ym = dra1.getbody().getPosition().y;
+//            fm1 = new firemon1(world,(xm/GameScreen.M_PER_PIXEL)-100,(ym/GameScreen.M_PER_PIXEL)+100);
+//            firemon1ArrayList.add(fm1);
+//            layer.add(fm1.layer());
+//            time=0;
+//
+//
+//        }
+//
     }
 
 
@@ -443,7 +479,10 @@ public class GameScreen extends Screen {
 //        z.paint(clock);
         c.paint(clock);
         d.paint(clock);
-        f.paint(clock);
+        dra1.paint(clock);
+        for (fire f : fireArrayList){
+            f.paint(clock);
+        }
 
     }
     public float getangle(){

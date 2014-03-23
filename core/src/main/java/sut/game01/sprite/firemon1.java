@@ -1,6 +1,5 @@
 package sut.game01.sprite;
 
-import org.jbox2d.collision.shapes.MassData;
 import org.jbox2d.collision.shapes.PolygonShape;
 import org.jbox2d.common.MathUtils;
 import org.jbox2d.common.Transform;
@@ -11,22 +10,19 @@ import playn.core.Layer;
 import playn.core.util.Callback;
 import playn.core.util.Clock;
 import sut.game01.core.GameScreen;
-import sut.game01.sprite.Sprite;
-import sut.game01.sprite.SpriteLoader;
-import sut.game01.core.GameScreen;
-
 
 /**
- * Created by rst706 on 3/18/14.
+ * Created by rst706 on 3/23/14.
  */
-public class fire {
+public class firemon1 {
+
     public Sprite sprite;
     public int spriteIndex = 0;
     public boolean hasLoaded = false;
     public boolean contacted;
     public int contactCheck ;
     public Body other;
-    public MassData massD;
+
 
 
 
@@ -40,16 +36,16 @@ public class fire {
     private Body body;
 
 
-    public fire(final World world, final float x, final float y){
-        this.sprite = SpriteLoader.getSprite("images/fire.json");
+    public firemon1(final World world, final float x, final float y){
+        this.sprite = SpriteLoader.getSprite("images/firemon1.json");
 
         this.sprite.addCallback(new Callback<Sprite>() {
             @Override
             public void onSuccess(Sprite result) {
 
-                sprite.layer().setSize(10f,10f);
+                sprite.layer().setSize(20f,20f);
 
-                sprite.layer().setOrigin(5, 10 / 2f);
+                sprite.layer().setOrigin(10, 20 / 2f);
                 sprite.setSprite(spriteIndex);
                 sprite.layer().setTranslation(x, y);
 
@@ -60,6 +56,7 @@ public class fire {
 
                 body = initPhysicsBody(world, GameScreen.M_PER_PIXEL * x, GameScreen.M_PER_PIXEL * y);
                 hasLoaded = true;
+
 
             }
 
@@ -153,10 +150,13 @@ public class fire {
         if (!hasLoaded)
             return;
 
-        body.setLinearVelocity(new Vec2(30 * MathUtils.cos(GameScreen.angle), 30 * MathUtils.sin(GameScreen.angle)));
+        //body.setLinearVelocity(new Vec2(30 * MathUtils.cos(GameScreen.angle), 30 * MathUtils.sin(GameScreen.angle)));
 
         sprite.layer().setTranslation((body.getPosition().x / GameScreen.M_PER_PIXEL),
                 (body.getPosition().y / GameScreen.M_PER_PIXEL));
+        Vec2 delta = new Vec2(80f-body.getPosition().x,400f-body.getPosition().y);
+        float angle = MathUtils.atan2( delta.x,delta.y);
+        body.setLinearVelocity(new Vec2(8 * -MathUtils.cos(angle), 8 * MathUtils.sin(angle)));
 
 
     }
