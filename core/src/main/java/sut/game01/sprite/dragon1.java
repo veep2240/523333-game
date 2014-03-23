@@ -26,7 +26,7 @@ public class dragon1 {
 
     public enum State{ATTK,DIE,DIEF};
 
-    private State state = State.ATTK;
+    private static State state = State.ATTK;
     private int e=0;
     private int time;
     private int hp=100;

@@ -1,0 +1,11 @@
+{"urls": ["images/firemon.png"],
+
+"sprites": [
+	{"id": "IDLE_1", "url":0, "x":0  , "y":0, "w":86, "h":75 }
+
+
+
+
+
+	]
+	}

@@ -23,6 +23,7 @@ public class car  {
     public boolean hasLoaded = false;
     public boolean contacted;
     public int contactCheck ;
+    public static int HP=1000;
     public Body other;
 
 

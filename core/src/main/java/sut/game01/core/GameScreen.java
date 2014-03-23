@@ -32,6 +32,7 @@ import org.jbox2d.collision.*;
 import org.jbox2d.collision.shapes.*;
 import org.jbox2d.common.MathUtils.*;
 import sut.game01.sprite.dragon1;
+import sut.game01.sprite.firemon1;
 
 import java.util.ArrayList;
 
@@ -52,13 +53,14 @@ public class GameScreen extends Screen {
 
     private DebugDrawBox2D debugDraw;
     private World world;
-    private boolean showDebugDraw = false;
+    private boolean showDebugDraw = true;
     private Body body1,body,body4;
     private Body body2;
     private zealot z ;
     private car c;
     private diver d;
     public dragon1 dra1;
+    public firemon1 fm1;
     private fire f;
     private int a=0,time=0;
     public float xm,ym;
@@ -74,6 +76,7 @@ public class GameScreen extends Screen {
     public static float fireX,fireY,angle;
 
     ArrayList<fire> fireArrayList = new ArrayList<fire>();
+    ArrayList<firemon1> firemon1ArrayList = new ArrayList<firemon1>();
 
     public GameScreen(ScreenStack ss) {
         this.ss = ss;
@@ -118,6 +121,23 @@ public class GameScreen extends Screen {
                 }
 //
 
+
+
+                }
+                for (firemon1 fi1 : firemon1ArrayList){
+                    if (contact.getFixtureA().getBody()==fi1.getbody()&&contact.getFixtureB().getBody()==c.getbody()){
+                        car.HP = car.HP - 100;
+                        fi1.closebody();
+
+                    }
+                    if (contact.getFixtureB().getBody()==fi1.getbody()){
+                        fi1.closebody();
+
+                    }
+                    if (contact.getFixtureA().getBody()==fi1.getbody()){
+                        fi1.closebody();
+
+                    }
 
 
                 }
@@ -449,21 +469,30 @@ public class GameScreen extends Screen {
         for (fire f : fireArrayList){
                 f.update(delta);
             }
+            time+=delta;
+            if (dra1.HP>0){
+            if (time>=1000){
+                xm = dra1.getbody().getPosition().x;
+                ym = dra1.getbody().getPosition().y;
+                fm1 = new firemon1(world,(xm/GameScreen.M_PER_PIXEL)-100,(ym/GameScreen.M_PER_PIXEL)+100);
+                firemon1ArrayList.add(fm1);
+                layer.add(fm1.layer());
+                time=0;
+            }
+
+
+
+            }
+            for (firemon1 fi1 : firemon1ArrayList){
+
+                fi1.update(delta);
+            }
+
 
 
         }
-//        time+=delta;
-//        if (time>=1000){
-//            xm = dra1.getbody().getPosition().x;
-//            ym = dra1.getbody().getPosition().y;
-//            fm1 = new firemon1(world,(xm/GameScreen.M_PER_PIXEL)-100,(ym/GameScreen.M_PER_PIXEL)+100);
-//            firemon1ArrayList.add(fm1);
-//            layer.add(fm1.layer());
-//            time=0;
-//
-//
-//        }
-//
+
+
     }
 
 
@@ -482,6 +511,9 @@ public class GameScreen extends Screen {
         dra1.paint(clock);
         for (fire f : fireArrayList){
             f.paint(clock);
+        }
+        for (firemon1 fi1 : firemon1ArrayList){
+            fi1.paint(clock);
         }
 
     }
