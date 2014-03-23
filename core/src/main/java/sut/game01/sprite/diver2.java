@@ -1,7 +1,7 @@
 package sut.game01.sprite;
 
+import org.jbox2d.collision.shapes.MassData;
 import org.jbox2d.collision.shapes.PolygonShape;
-import org.jbox2d.common.MathUtils;
 import org.jbox2d.common.Transform;
 import org.jbox2d.common.Vec2;
 import org.jbox2d.dynamics.*;
@@ -12,17 +12,16 @@ import playn.core.util.Clock;
 import sut.game01.core.GameScreen;
 
 /**
- * Created by rst706 on 3/23/14.
+ * Created by rst706 on 3/22/14.
  */
-public class firemon1 {
-
+public class diver2 {
     public Sprite sprite;
     public int spriteIndex = 0;
     public boolean hasLoaded = false;
     public boolean contacted;
     public int contactCheck ;
     public Body other;
-
+    public MassData massD;
 
 
 
@@ -34,19 +33,17 @@ public class firemon1 {
     private int hp=100;
     private int offset = 0;
     private Body body;
-    private static boolean bb =true;
 
-
-    public firemon1(final World world, final float x, final float y){
-        this.sprite = SpriteLoader.getSprite("images/firemon1.json");
+    public diver2(final World world, final float x, final float y){
+        this.sprite = SpriteLoader.getSprite("images/diver2.json");
 
         this.sprite.addCallback(new Callback<Sprite>() {
             @Override
             public void onSuccess(Sprite result) {
 
-                sprite.layer().setSize(20f,20f);
 
-                sprite.layer().setOrigin(10, 20 / 2f);
+
+                sprite.layer().setOrigin(sprite.width()/2f, sprite.height()/2f);
                 sprite.setSprite(spriteIndex);
                 sprite.layer().setTranslation(x, y);
 
@@ -57,7 +54,6 @@ public class firemon1 {
 
                 body = initPhysicsBody(world, GameScreen.M_PER_PIXEL * x, GameScreen.M_PER_PIXEL * y);
                 hasLoaded = true;
-
 
             }
 
@@ -120,23 +116,23 @@ public class firemon1 {
         return hasLoaded;
     }
     public void contact(Contact contact){
-//        contacted = true;
-//        contactCheck = 0;
-//
-//        if (state == State.IDLE){
-//            state = State.ATTK;
-//
-//
-//            body.applyLinearImpulse(new Vec2(0f, -100f), body.getPosition());
-//
-//        }
-//        if (contact.getFixtureA().getBody() == body){
-//
-//            other = contact.getFixtureB().getBody();
-//        }else {
-//
-//            other = contact.getFixtureA().getBody();
-//        }
+        contacted = true;
+        contactCheck = 0;
+
+        if (state == State.IDLE){
+            state = State.ATTK;
+
+
+            body.applyLinearImpulse(new Vec2(0f, -100f), body.getPosition());
+
+        }
+        if (contact.getFixtureA().getBody() == body){
+
+            other = contact.getFixtureB().getBody();
+        }else {
+
+            other = contact.getFixtureA().getBody();
+        }
 
 
     }
@@ -151,13 +147,9 @@ public class firemon1 {
         if (!hasLoaded)
             return;
 
-        //body.setLinearVelocity(new Vec2(30 * MathUtils.cos(GameScreen.angle), 30 * MathUtils.sin(GameScreen.angle)));
 
-        sprite.layer().setTranslation((body.getPosition().x / GameScreen.M_PER_PIXEL),
-                (body.getPosition().y / GameScreen.M_PER_PIXEL));
-        Vec2 delta = new Vec2(80f-body.getPosition().x,400f-body.getPosition().y);
-        float angle = MathUtils.atan2( delta.x,delta.y);
-        body.setLinearVelocity(new Vec2(8 * -MathUtils.cos(angle), 8 * MathUtils.sin(angle)));
+        sprite.layer().setTranslation((body.getPosition().x/ GameScreen.M_PER_PIXEL),
+                (body.getPosition().y/ GameScreen.M_PER_PIXEL));
 
 
     }
@@ -176,8 +168,5 @@ public class firemon1 {
 
 
     }
-    public void closebody(){
-        body.setActive(false);
-        sprite.layer().destroy();
-    }
+
 }

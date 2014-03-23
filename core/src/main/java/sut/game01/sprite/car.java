@@ -82,6 +82,7 @@ public class car  {
                     offset =0;
                     spriteIndex = offset + ((spriteIndex + 1) % 12);
                     break;
+                case DEAD:
 
 
             }
@@ -89,6 +90,7 @@ public class car  {
             sprite.setSprite(spriteIndex);
             e =0;
         }
+        System.out.println(HP);
     }
 
     private Body initPhysicsBody(World world, float x, float y){

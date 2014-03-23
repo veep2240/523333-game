@@ -14,12 +14,14 @@ import sut.game01.core.GameScreen;
  * Created by rst706 on 3/22/14.
  */
 public class dragon1 {
+
     public Sprite sprite;
     public int spriteIndex = 0;
     public boolean hasLoaded = false;
     public boolean contacted;
     public int contactCheck,HP=100 ;
     public Body other;
+    public boolean bb =true;
 
 
 
@@ -69,7 +71,7 @@ public class dragon1 {
         time +=delta;
         if (HP!=0){
         if (time>=40){
-            body.applyForce(new Vec2(-5,-59.50f),body.getPosition());
+            body.applyForce(new Vec2(-5,-59.30f),body.getPosition());
             time = 0;
 
                                 }
@@ -140,6 +142,7 @@ public class dragon1 {
     public void contact(Contact contact){
         contacted = true;
         contactCheck = 0;
+
         if (HP<=0){
             state = State.DIEF;}
         else {state = State.DIE;}
@@ -178,5 +181,22 @@ public class dragon1 {
     public void closebody(){
         body.setActive(false);
         sprite.layer().destroy();
+
+    }
+    public void reset(){
+        state = State.ATTK;
+
+
+    }
+    public boolean gethasload(){
+        return hasLoaded;
+    }
+    public boolean getbb(){
+
+        return bb;
+
+    }
+    public void setbb(){
+        bb = false;
     }
 }

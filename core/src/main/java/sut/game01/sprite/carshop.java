@@ -60,7 +60,7 @@ public class carshop {
         if(!hasLoaded) return;
         e +=delta;
         time +=delta;
-        sprite.layer().setRotation(body.getAngle());
+
 
 
 

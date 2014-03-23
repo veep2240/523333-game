@@ -48,21 +48,20 @@ public class GameScreen extends Screen {
     private static int width =24;
     private static int height = 18;
     private ScreenStack ss;
-    private Body ground ;
+    private Body ground,ground1 ;
 
 
     private DebugDrawBox2D debugDraw;
     private World world;
-    private boolean showDebugDraw = true;
+    private boolean showDebugDraw = true,opdr=false;
     private Body body1,body,body4;
     private Body body2;
     private zealot z ;
     private car c;
     private diver d;
-    public dragon1 dra1;
     public firemon1 fm1;
     private fire f;
-    private int a=0,time=0;
+    private int a=0,time=0,time1=0,ST=0,time2=0;
     public float xm,ym;
     private RevoluteJoint joint3;
     private LineJoint joint;
@@ -77,6 +76,7 @@ public class GameScreen extends Screen {
 
     ArrayList<fire> fireArrayList = new ArrayList<fire>();
     ArrayList<firemon1> firemon1ArrayList = new ArrayList<firemon1>();
+    ArrayList<dragon1> dra1ArrayList = new ArrayList<dragon1>();
 
     public GameScreen(ScreenStack ss) {
         this.ss = ss;
@@ -96,10 +96,12 @@ public class GameScreen extends Screen {
         world.setContactListener(new ContactListener() {
             @Override
             public void beginContact(Contact contact) {
+                for (dragon1 dra1 : dra1ArrayList){
                 for (fire f : fireArrayList){
 
                     if (contact.getFixtureB().getBody()==f.getbody()&&contact.getFixtureA().getBody()==dra1.getbody()){
                         dra1.contact(contact);
+
                         dra1.HP = dra1.HP -50;
                         f.closebody();
 
@@ -108,8 +110,14 @@ public class GameScreen extends Screen {
                 }
                 if(contact.getFixtureB().getBody()==dra1.getbody()&&contact.getFixtureA().getBody()==ground){
                     dra1.closebody();
+                    ST+=1;
+                    dra1.HP=100;
+                    dra1.reset();
+                    dra1.setbb();
 
-                }
+                }}
+
+
                 if (contact.getFixtureA().getBody()==body&&contact.getFixtureB().getBody()==d.getbody()){
                 if (firebox==false){
                     if (firexy==true){
@@ -125,7 +133,7 @@ public class GameScreen extends Screen {
 
                 }
                 for (firemon1 fi1 : firemon1ArrayList){
-                    if (contact.getFixtureA().getBody()==fi1.getbody()&&contact.getFixtureB().getBody()==c.getbody()){
+                    if (contact.getFixtureB().getBody()==fi1.getbody()&&contact.getFixtureA().getBody()==ground1){
                         car.HP = car.HP - 100;
                         fi1.closebody();
 
@@ -203,11 +211,18 @@ public class GameScreen extends Screen {
 
         }
         ground = world.createBody(new BodyDef());
+        ground1 = world.createBody(new BodyDef());
         PolygonShape groundShape = new PolygonShape();
         groundShape.setAsEdge(new Vec2(0.3f, height-2),new Vec2(width+10,height-2));
         PolygonShape groundShape1 = new PolygonShape();
+        PolygonShape groundShape2 = new PolygonShape();
+        PolygonShape groundShape3 = new PolygonShape();
         groundShape1.setAsEdge(new Vec2(0.3f, height-2),new Vec2(width-23.68f,height-5));
+        groundShape2.setAsEdge(new Vec2(4f, height-3.9f),new Vec2(width-20.55f,height-5.7f));
+        groundShape3.setAsEdge(new Vec2(4f, height-2f),new Vec2(width-19.95f,height-3.9f));
         ground.createFixture(groundShape1, 0.0f);
+        ground1.createFixture(groundShape2, 0.0f);
+        ground1.createFixture(groundShape3, 0.0f);
         ground.createFixture(groundShape, 0.0f);
 
         Image bg1Image = assets().getImage("images/back.png");
@@ -234,10 +249,10 @@ public class GameScreen extends Screen {
 //        z = new zealot(world,100f,100f);
         c = new car(world,80f,400f);
         d = new diver(world,80f,355f);
-        dra1 = new dragon1(world,750,200);
+
         layer.add(c.layer());
         layer.add(d.layer());
-        layer.add(dra1.layer());
+
 
 //        layer.add(z.layer());
 
@@ -465,23 +480,55 @@ public class GameScreen extends Screen {
 //        z.update(delta);
         c.update(delta);
         d.update(delta);
+            for (dragon1 dra1 : dra1ArrayList){
             dra1.update(delta);
+            }
         for (fire f : fireArrayList){
                 f.update(delta);
             }
             time+=delta;
-            if (dra1.HP>0){
-            if (time>=1000){
-                xm = dra1.getbody().getPosition().x;
-                ym = dra1.getbody().getPosition().y;
-                fm1 = new firemon1(world,(xm/GameScreen.M_PER_PIXEL)-100,(ym/GameScreen.M_PER_PIXEL)+100);
-                firemon1ArrayList.add(fm1);
-                layer.add(fm1.layer());
-                time=0;
+            time1+=delta;
+            time2+=delta;
+            if (time1>=10000){
+                if(ST<10){
+                dragon1 dra1 = new dragon1(world,750,280);
+                dra1.HP=100;
+                dra1.reset();
+                dra1ArrayList.add(dra1);
+                layer.add(dra1.layer());
+                opdr=true;
+                time1=0;
+
+                }
+
+
             }
 
 
 
+
+
+            if (time>=1500){
+                for (dragon1 dra1 : dra1ArrayList){
+
+
+                if (dra1.gethasload()==true){
+                    if(dra1.getbb()==true){
+
+                xm = dra1.getbody().getPosition().x;
+                ym = dra1.getbody().getPosition().y;
+                fm1 = new firemon1(world,(xm/GameScreen.M_PER_PIXEL)-50,(ym/GameScreen.M_PER_PIXEL)+50);
+                firemon1ArrayList.add(fm1);
+                layer.add(fm1.layer());
+                time=0;
+                    }
+                }
+
+
+
+
+            }
+            }
             }
             for (firemon1 fi1 : firemon1ArrayList){
 
@@ -493,7 +540,7 @@ public class GameScreen extends Screen {
         }
 
 
-    }
+
 
 
 
@@ -508,7 +555,9 @@ public class GameScreen extends Screen {
 //        z.paint(clock);
         c.paint(clock);
         d.paint(clock);
+        for (dragon1 dra1 : dra1ArrayList){
         dra1.paint(clock);
+        }
         for (fire f : fireArrayList){
             f.paint(clock);
         }

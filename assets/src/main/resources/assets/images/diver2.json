@@ -1,0 +1,11 @@
+{"urls": ["images/diver2.png"],
+
+"sprites": [
+	{"id": "IDLE_1", "url":0, "x":0  , "y":0, "w":96, "h":16 }
+
+
+
+
+
+	]
+	}

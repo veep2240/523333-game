@@ -15,6 +15,10 @@ public class MyGame extends Game.Default {
     protected final Clock.Source clock = new Clock.Source(UPDATE_RATE);
     public static final int money = 0;
     public static int ppp=0;
+    public static enum Statediver{d1,d2};
+    public static Statediver statediver = Statediver.d1;
+    public static boolean cd = false;
+    public static int d1 ,d2;
 
   public MyGame() {
     super(UPDATE_RATE); // call update every 33ms (30 times per second)
