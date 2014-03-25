@@ -21,6 +21,7 @@ public class diver2 {
     public boolean contacted;
     public int contactCheck ;
     public Body other;
+    public float angle=0;
     public MassData massD;
 
 
@@ -42,8 +43,8 @@ public class diver2 {
             public void onSuccess(Sprite result) {
 
 
-
-                sprite.layer().setOrigin(sprite.width()/2f, sprite.height()/2f);
+                sprite.layer().setSize(30,8);
+                sprite.layer().setOrigin(30/2f, 8/2f);
                 sprite.setSprite(spriteIndex);
                 sprite.layer().setTranslation(x, y);
 
@@ -68,6 +69,7 @@ public class diver2 {
     public void update(int delta){
         if(!hasLoaded) return;
         sprite.layer().setRotation(body.getAngle());
+
 //        float a= 0.6f;
 //        float i;
 //        for(i=0f;i<a;i=i+0.1f){
@@ -87,7 +89,7 @@ public class diver2 {
         fx.position.set(100f,100f);
         shape.centroid(fx);
 
-        shape.setAsBox(sprite.layer().width() * GameScreen.M_PER_PIXEL / 2, sprite.layer().height() * GameScreen.M_PER_PIXEL / 2);
+        shape.setAsBox(30 * GameScreen.M_PER_PIXEL / 2, 8 * GameScreen.M_PER_PIXEL / 2);
         FixtureDef fixtureDef = new FixtureDef();
         fixtureDef.shape = shape;
         fixtureDef.density = 0.4f;
@@ -147,7 +149,7 @@ public class diver2 {
         if (!hasLoaded)
             return;
 
-
+        body.setTransform(body.getPosition(),angle);
         sprite.layer().setTranslation((body.getPosition().x/ GameScreen.M_PER_PIXEL),
                 (body.getPosition().y/ GameScreen.M_PER_PIXEL));
 
@@ -157,15 +159,17 @@ public class diver2 {
         return this.body;
 
     }
-    public void rdiver(){
-//        float a= 0.6f;
-//        float i;
-//        for(i=0f;i<a;i=i+0.001f){
-//        body.setTransform(body.getPosition(),i);}
-        body.applyLinearImpulse(new Vec2(0f, 5f), body.getPosition());
+    public void rdiver(float aa){
+        angle =aa;
 
 
 
+
+
+    }
+    public void vi2(){
+        sprite.layer().setTranslation((body.getPosition().x/ GameScreen.M_PER_PIXEL),
+                (body.getPosition().y/ GameScreen.M_PER_PIXEL));
 
     }
 

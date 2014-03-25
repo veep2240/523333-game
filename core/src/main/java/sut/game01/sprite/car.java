@@ -83,6 +83,9 @@ public class car  {
                     spriteIndex = offset + ((spriteIndex + 1) % 12);
                     break;
                 case DEAD:
+                    offset =12;
+                    spriteIndex = offset + ((spriteIndex + 1) % 3);
+                    break;
 
 
             }
@@ -90,6 +93,7 @@ public class car  {
             sprite.setSprite(spriteIndex);
             e =0;
         }
+        if (HP==0){state = State.DEAD;}
         System.out.println(HP);
     }
 

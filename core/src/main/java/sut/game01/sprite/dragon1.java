@@ -71,7 +71,7 @@ public class dragon1 {
         time +=delta;
         if (HP!=0){
         if (time>=40){
-            body.applyForce(new Vec2(-5,-59.30f),body.getPosition());
+            body.applyForce(new Vec2(-30,-160f),body.getPosition());
             time = 0;
 
                                 }
@@ -110,6 +110,7 @@ public class dragon1 {
             sprite.setSprite(spriteIndex);
             e =0;
         }
+        if(body.getPosition().x<0){state =State.ATTK;}
 
     }
 
@@ -120,7 +121,7 @@ public class dragon1 {
         Body body = world.createBody(bodyDef);
 
         PolygonShape shape = new PolygonShape();
-        shape.setAsBox(56 * GameScreen.M_PER_PIXEL / 2 , sprite.layer().height() * GameScreen.M_PER_PIXEL/2);
+        shape.setAsBox(107 * GameScreen.M_PER_PIXEL / 2 , 128 * GameScreen.M_PER_PIXEL/2);
         FixtureDef fixtureDef = new FixtureDef();
         fixtureDef.shape = shape;
         fixtureDef.density = 0.4f;

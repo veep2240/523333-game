@@ -56,31 +56,7 @@ public class StartScreen extends Screen {
             }
         });
 
-        Image bb1Image = assets().getImage("images/settingbutton.png");
-        ImageLayer bb1Layer =graphics().createImageLayer(bb1Image);
-        bb1Layer.setSize(183,40);
-        bb1Layer.setOrigin(91,20);
-        bb1Layer.setTranslation(300,280);
-        layer.add(bb1Layer);
-        bb1Layer.addListener(new Pointer.Adapter(){
-            @Override
-            public void onPointerEnd(Pointer.Event event) {
-                ss.push(new GameScreen(ss));
-            }
-        });
 
-        Image bb2Image = assets().getImage("images/aboutbutton.png");
-        ImageLayer bb2Layer =graphics().createImageLayer(bb2Image);
-        bb2Layer.setSize(183,40);
-        bb2Layer.setOrigin(91,20);
-        bb2Layer.setTranslation(300,330);
-        layer.add(bb2Layer);
-        bb2Layer.addListener(new Pointer.Adapter(){
-            @Override
-            public void onPointerEnd(Pointer.Event event) {
-                ss.push(new GameScreen(ss));
-            }
-        });
 
 
     }

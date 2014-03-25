@@ -21,12 +21,15 @@ import static playn.core.PlayN.graphics;
  * Created by rst706 on 3/21/14.
  */
 public class ShopScreen extends UIScreen{
-    public static Root root,root1,root2;
-    public static boolean orm = false,orp = false;
+    public static Root root,root1,root2,root3,root4,root5;
+    public static boolean orm = true,orp = false;
     public static Image se1Image,sef1Image,se2Image,sef2Image;
     public static ImageLayer se1Layer,sef1Layer,se2Layer,sef2Layer;
     public static Image d1,d2;
     public static ImageLayer dl1,dl2;
+    public int sd=300,spp=100;
+    public boolean opdi=false,tt=true;
+
 
     public carshop c ;
     public static final Font TITLE_FONT = PlayN.graphics().createFont(
@@ -79,7 +82,7 @@ public class ShopScreen extends UIScreen{
         dLayer.setTranslation(100,390);
         layer.add(dLayer);
 
-        se1Image = assets().getImage("images/sell.png");
+        se1Image = assets().getImage("images/sellf.png");
         se1Layer =graphics().createImageLayer(se1Image);
         se1Layer.setSize(120,20);
         se1Layer.setOrigin(7,12);
@@ -129,15 +132,36 @@ public class ShopScreen extends UIScreen{
         root.setSize(1200, 200);
 
         root.add(new Label(String.valueOf(MyGame.ppp)).addStyles(Style.FONT.is(ShopScreen.TITLE_FONT)));
+        root2 = iface.createRoot(
+                AxisLayout.vertical().gap(15),
+                SimpleStyles.newSheet(), layer);
+        root2.setSize(505, 895);
+
+        root2.add(new Label(String.valueOf(sd)).addStyles(Style.FONT.is(ShopScreen.TITLE_FONT)));
+        Image reImage = assets().getImage("images/reload.png");
+        ImageLayer reLayer =graphics().createImageLayer(reImage);
+        reLayer.setSize(44,44);
+        reLayer.setOrigin(22,22);
+        reLayer.setTranslation(40,40);
+        layer.add(reLayer);
+        reLayer.addListener(new Pointer.Adapter(){
+            @Override
+            public void onPointerStart(Pointer.Event event) {
+                super.onPointerStart(event);
+                ss.remove(ShopScreen.this);
+            }
+        });
 
         sepLayer.addListener(new Pointer.Adapter(){
             @Override
             public void onPointerStart(Pointer.Event event) {
                 super.onPointerStart(event);
+                if(MyGame.money>=spp){
                 MyGame.ppp +=1;
                 root.removeAll();
                 orp = true;
-
+                    MyGame.money-=spp;
+                }
 
             }
         });
@@ -145,7 +169,7 @@ public class ShopScreen extends UIScreen{
             @Override
             public void onPointerStart(Pointer.Event event) {
                 super.onPointerStart(event);
-                layer.remove(se1Layer);
+
                 sef1Image = assets().getImage("images/sellf.png");
                 sef1Layer =graphics().createImageLayer(sef1Image);
                 sef1Layer.setSize(120,20);
@@ -158,12 +182,18 @@ public class ShopScreen extends UIScreen{
             @Override
             public void onPointerStart(Pointer.Event event) {
                 super.onPointerStart(event);
+                if(MyGame.money>=sd){
                 sef2Image = assets().getImage("images/sellf.png");
                 sef2Layer =graphics().createImageLayer(sef2Image);
                 sef2Layer.setSize(120,20);
-                sef2Layer.setOrigin(7,12);
-                sef2Layer.setTranslation(200,430);
-                layer.add(sef2Layer);
+                sef2Layer.setOrigin(7, 12);
+                sef2Layer.setTranslation(200, 430);
+                MyGame.money-=sd;
+                root1.removeAll();
+                orm = true;
+                opdi =true;
+                MyGame.opdi2=true;
+                layer.add(sef2Layer);}
             }
         });
 
@@ -181,9 +211,11 @@ public class ShopScreen extends UIScreen{
             @Override
             public void onPointerStart(Pointer.Event event) {
                 super.onPointerStart(event);
+                if (opdi==true){
                 MyGame.cd=true;
 
                 MyGame.statediver = MyGame.Statediver.d2;
+                }
 
             }
         });
@@ -264,8 +296,21 @@ public class ShopScreen extends UIScreen{
             }
 
         }
+        if(MyGame.opdi2){
+            if(tt){
+            sef2Image = assets().getImage("images/sellf.png");
+            sef2Layer =graphics().createImageLayer(sef2Image);
+            sef2Layer.setSize(120,20);
+            sef2Layer.setOrigin(7, 12);
+            sef2Layer.setTranslation(200, 430);
+            layer.add(sef2Layer);
+                tt=false;
+            }
+
+        }
 
         if (orm){
+            root1.removeAll();
         root1 = iface.createRoot(
                 AxisLayout.vertical().gap(15),
                 SimpleStyles.newSheet(), layer);
@@ -274,6 +319,7 @@ public class ShopScreen extends UIScreen{
         root1.add(new Label(String.valueOf(MyGame.money)).addStyles(Style.FONT.is(ShopScreen.TITLE_FONT)));
             }
         if (orp){
+            root.removeAll();
             root = iface.createRoot(
                     AxisLayout.vertical().gap(15),
                     SimpleStyles.newSheet(), layer);
@@ -284,6 +330,7 @@ public class ShopScreen extends UIScreen{
 
         }
         c.update(delta);
+
     }
 
     @Override
